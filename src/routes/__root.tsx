@@ -79,14 +79,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Axiom Visibility — AI Visibility for Commercial Solar" },
+      { title: "Rebate Intel — AI Visibility for Commercial Solar" },
       {
         name: "description",
         content:
           "We help commercial solar companies become recommended by ChatGPT, Gemini, Claude, and Perplexity.",
       },
-      { name: "author", content: "Axiom Visibility" },
-      { property: "og:site_name", content: "Axiom Visibility" },
+      { name: "author", content: "Rebate Intel" },
+      { property: "og:site_name", content: "Rebate Intel" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],

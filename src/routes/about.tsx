@@ -5,9 +5,9 @@ import { FinalCTA } from "@/components/site/CTA";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About — Axiom Visibility" },
+      { title: "About — Rebate Intel" },
       { name: "description", content: "An AI visibility agency for commercial solar companies. We research how AI platforms evaluate and recommend businesses." },
-      { property: "og:title", content: "About — Axiom Visibility" },
+      { property: "og:title", content: "About — Rebate Intel" },
       { property: "og:description", content: "Helping outstanding commercial solar companies become as visible online as they are successful in real life." },
       { property: "og:url", content: "/about" },
     ],
@@ -26,7 +26,7 @@ function AboutPage() {
             We study how AI decides which companies to recommend.
           </h1>
           <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-            Axiom Visibility is a specialist agency built for a single inflection point: the moment commercial buyers stopped starting on Google and started asking AI. We research how ChatGPT, Gemini, Claude, and Perplexity evaluate, describe, and recommend businesses — and we translate that research into measurable visibility for commercial solar companies.
+            Rebate Intel is a specialist agency built for a single inflection point: the moment commercial buyers stopped starting on Google and started asking AI. We research how ChatGPT, Gemini, Claude, and Perplexity evaluate, describe, and recommend businesses — and we translate that research into measurable visibility for commercial solar companies.
           </p>
         </div>
       </Section>

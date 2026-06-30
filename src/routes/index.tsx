@@ -7,13 +7,13 @@ import { FinalCTA } from "@/components/site/CTA";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Axiom Visibility — Become the Solar Company AI Recommends" },
+      { title: "Rebate Intel — Become the Solar Company AI Recommends" },
       {
         name: "description",
         content:
           "Commercial buyers are asking ChatGPT, Gemini, Claude, and Perplexity which solar companies to trust. We make sure they recommend yours.",
       },
-      { property: "og:title", content: "Axiom Visibility — Become the Solar Company AI Recommends" },
+      { property: "og:title", content: "Rebate Intel — Become the Solar Company AI Recommends" },
       {
         property: "og:description",
         content:
@@ -64,17 +64,9 @@ function Hero() {
             >
               Book an AI visibility strategy call <ArrowRight className="h-4 w-4" />
             </Link>
-            <Link
-              to="/case-studies"
-              className="inline-flex items-center gap-2 rounded-md border border-border bg-background px-5 py-3 text-sm font-medium text-foreground transition-colors hover:bg-surface"
-            >
-              View AI visibility audits
-            </Link>
           </div>
           <div className="mt-10 flex items-center gap-6 text-xs text-muted-foreground">
-            <div className="flex items-center gap-2"><Check className="h-4 w-4 text-brand" /> US-based team</div>
             <div className="flex items-center gap-2"><Check className="h-4 w-4 text-brand" /> Commercial solar focus</div>
-            <div className="flex items-center gap-2 hidden sm:flex"><Check className="h-4 w-4 text-brand" /> No long-term contracts</div>
           </div>
         </div>
         <div className="lg:col-span-5">

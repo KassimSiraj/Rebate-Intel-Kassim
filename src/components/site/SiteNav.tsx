@@ -18,9 +18,9 @@ export function SiteNav() {
     <header className="sticky top-0 z-40 bg-background/80 backdrop-blur-md hairline-b">
       <div className="container-page flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center gap-2 group">
-          <span className="inline-flex h-7 w-7 items-center justify-center rounded-md bg-foreground text-background text-[11px] font-semibold tracking-tight">AV</span>
+          <span className="inline-flex h-7 w-7 items-center justify-center rounded-md bg-foreground text-background text-[11px] font-semibold tracking-tight">RI</span>
           <span className="font-semibold tracking-tight text-foreground">
-            Axiom Visibility
+            Rebate Intel
           </span>
         </Link>
 

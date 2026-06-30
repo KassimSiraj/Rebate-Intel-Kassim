@@ -6,9 +6,9 @@ import { FinalCTA } from "@/components/site/CTA";
 export const Route = createFileRoute("/case-studies")({
   head: () => ({
     meta: [
-      { title: "Case Studies — Axiom Visibility" },
+      { title: "Case Studies — Rebate Intel" },
       { name: "description", content: "AI visibility audits from real commercial solar companies." },
-      { property: "og:title", content: "Case Studies — Axiom Visibility" },
+      { property: "og:title", content: "Case Studies — Rebate Intel" },
       { property: "og:description", content: "How commercial solar companies are building AI recommendation share." },
       { property: "og:url", content: "/case-studies" },
     ],

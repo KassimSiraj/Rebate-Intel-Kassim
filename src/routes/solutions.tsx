@@ -6,9 +6,9 @@ import { FinalCTA } from "@/components/site/CTA";
 export const Route = createFileRoute("/solutions")({
   head: () => ({
     meta: [
-      { title: "Solutions — Axiom Visibility" },
+      { title: "Solutions — Rebate Intel" },
       { name: "description", content: "Five disciplines that make commercial solar companies recommended by ChatGPT, Gemini, Claude, and Perplexity." },
-      { property: "og:title", content: "Solutions — Axiom Visibility" },
+      { property: "og:title", content: "Solutions — Rebate Intel" },
       { property: "og:description", content: "AI Visibility Audit, Competitor Intelligence, Authority Building, Content Strategy, and Digital Trust Signals." },
       { property: "og:url", content: "/solutions" },
     ],
