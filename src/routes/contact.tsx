@@ -7,8 +7,8 @@ export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
       { title: "Contact — Book an AI Visibility Strategy Call" },
-      { name: "description", content: "Book a 30-minute AI visibility strategy call with the Axiom Visibility team." },
-      { property: "og:title", content: "Contact — Axiom Visibility" },
+      { name: "description", content: "Book a 30-minute AI visibility strategy call with the Rebate Intel team." },
+      { property: "og:title", content: "Contact — Rebate Intel" },
       { property: "og:description", content: "Book a 30-minute AI visibility strategy call." },
       { property: "og:url", content: "/contact" },
     ],

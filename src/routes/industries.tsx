@@ -6,9 +6,9 @@ import { Sun, Factory, Leaf, BatteryCharging, Building2, Wrench } from "lucide-r
 export const Route = createFileRoute("/industries")({
   head: () => ({
     meta: [
-      { title: "Industries — Axiom Visibility" },
+      { title: "Industries — Rebate Intel" },
       { name: "description", content: "AI visibility for commercial solar, industrial energy, renewable energy, storage, construction, and facility management." },
-      { property: "og:title", content: "Industries — Axiom Visibility" },
+      { property: "og:title", content: "Industries — Rebate Intel" },
       { property: "og:description", content: "Where we work: energy and the built environment." },
       { property: "og:url", content: "/industries" },
     ],
