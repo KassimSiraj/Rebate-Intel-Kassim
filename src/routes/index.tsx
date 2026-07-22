@@ -35,12 +35,11 @@ function Home() {
       <Services />
       <Process />
       <WhyAIRecommends />
-      <CaseStudiesPreview />
-      <IndustriesStrip />
-      <FinalCTA />
     </>
   );
 }
+// removed sections below
+function _Unused() { return null; }
 
 function Hero() {
   return (
@@ -62,7 +61,7 @@ function Hero() {
               to="/contact"
               className="inline-flex items-center gap-2 rounded-md bg-foreground px-5 py-3 text-sm font-medium text-background transition-colors hover:bg-foreground/90"
             >
-              Book an AI visibility strategy call <ArrowRight className="h-4 w-4" />
+              Book 15 min. WhatsApp call. <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
           <div className="mt-10 flex items-center gap-6 text-xs text-muted-foreground">
