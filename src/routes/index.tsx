@@ -35,12 +35,11 @@ function Home() {
       <Services />
       <Process />
       <WhyAIRecommends />
-      <CaseStudiesPreview />
-      <IndustriesStrip />
-      <FinalCTA />
     </>
   );
 }
+// removed sections below
+function _Unused() { return null; }
 
 function Hero() {
   return (
