@@ -20,12 +20,6 @@ export function FinalCTA() {
               >
                 Book your strategy call <ArrowRight className="h-4 w-4" />
               </Link>
-              <Link
-                to="/contact"
-                className="inline-flex items-center gap-2 rounded-md border border-background/20 px-5 py-3 text-sm font-medium text-background transition-colors hover:bg-background/10"
-              >
-                Request an AI visibility audit
-              </Link>
             </div>
           </div>
           <div aria-hidden className="pointer-events-none absolute -right-32 -bottom-32 h-96 w-96 rounded-full border border-background/10" />
