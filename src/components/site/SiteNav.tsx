@@ -3,12 +3,8 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
 const links = [
-  { to: "/", label: "Home" },
   { to: "/solutions", label: "Solutions" },
-  { to: "/industries", label: "Industries" },
-  { to: "/resources", label: "Resources" },
   { to: "/about", label: "About" },
-  { to: "/contact", label: "Contact" },
 ] as const;
 
 export function SiteNav() {
@@ -30,7 +26,7 @@ export function SiteNav() {
               to={l.to}
               className="px-3 py-2 text-sm text-muted-foreground hover:text-foreground transition-colors rounded-md"
               activeProps={{ className: "px-3 py-2 text-sm text-foreground rounded-md" }}
-              activeOptions={{ exact: l.to === "/" }}
+              activeOptions={{ exact: false }}
             >
               {l.label}
             </Link>
@@ -44,7 +40,7 @@ export function SiteNav() {
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-md bg-foreground px-4 py-2 text-sm font-medium text-background transition-colors hover:bg-foreground/90"
           >
-            Book an AI Positioning strategy call
+            Book Strategy Call
           </a>
         </div>
 
@@ -77,7 +73,7 @@ export function SiteNav() {
               onClick={() => setOpen(false)}
               className="mt-3 inline-flex items-center justify-center rounded-md bg-foreground px-4 py-2.5 text-sm font-medium text-background"
             >
-              Book an AI Positioning strategy call
+              Book Strategy Call
             </a>
           </div>
         </div>
