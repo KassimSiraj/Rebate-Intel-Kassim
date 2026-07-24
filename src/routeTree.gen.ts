@@ -14,7 +14,6 @@ import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as ResourcesRouteImport } from './routes/resources'
 import { Route as IndustriesRouteImport } from './routes/industries'
 import { Route as ContactRouteImport } from './routes/contact'
-import { Route as CaseStudiesRouteImport } from './routes/case-studies'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 
@@ -43,11 +42,6 @@ const ContactRoute = ContactRouteImport.update({
   path: '/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
-const CaseStudiesRoute = CaseStudiesRouteImport.update({
-  id: '/case-studies',
-  path: '/case-studies',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const AboutRoute = AboutRouteImport.update({
   id: '/about',
   path: '/about',
@@ -62,7 +56,6 @@ const IndexRoute = IndexRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/case-studies': typeof CaseStudiesRoute
   '/contact': typeof ContactRoute
   '/industries': typeof IndustriesRoute
   '/resources': typeof ResourcesRoute
@@ -72,7 +65,6 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/case-studies': typeof CaseStudiesRoute
   '/contact': typeof ContactRoute
   '/industries': typeof IndustriesRoute
   '/resources': typeof ResourcesRoute
@@ -83,7 +75,6 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/case-studies': typeof CaseStudiesRoute
   '/contact': typeof ContactRoute
   '/industries': typeof IndustriesRoute
   '/resources': typeof ResourcesRoute
@@ -95,7 +86,6 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/about'
-    | '/case-studies'
     | '/contact'
     | '/industries'
     | '/resources'
@@ -105,7 +95,6 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/about'
-    | '/case-studies'
     | '/contact'
     | '/industries'
     | '/resources'
@@ -115,7 +104,6 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/about'
-    | '/case-studies'
     | '/contact'
     | '/industries'
     | '/resources'
@@ -126,7 +114,6 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
-  CaseStudiesRoute: typeof CaseStudiesRoute
   ContactRoute: typeof ContactRoute
   IndustriesRoute: typeof IndustriesRoute
   ResourcesRoute: typeof ResourcesRoute
@@ -171,13 +158,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ContactRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/case-studies': {
-      id: '/case-studies'
-      path: '/case-studies'
-      fullPath: '/case-studies'
-      preLoaderRoute: typeof CaseStudiesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/about': {
       id: '/about'
       path: '/about'
@@ -198,7 +178,6 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
-  CaseStudiesRoute: CaseStudiesRoute,
   ContactRoute: ContactRoute,
   IndustriesRoute: IndustriesRoute,
   ResourcesRoute: ResourcesRoute,
