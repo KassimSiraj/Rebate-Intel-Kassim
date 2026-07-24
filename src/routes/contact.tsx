@@ -86,12 +86,14 @@ function ContactPage() {
                   />
                 </div>
                 <div className="md:col-span-2 mt-2 flex flex-wrap items-center gap-3">
-                  <button
-                    type="submit"
+                  <a
+                    href="https://cal.com/rebateintel/30min"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 rounded-md bg-foreground px-5 py-3 text-sm font-medium text-background hover:bg-foreground/90"
                   >
                     Book an AI Positioning strategy call <ArrowRight className="h-4 w-4" />
-                  </button>
+                  </a>
                   <span className="text-xs text-muted-foreground">We reply within one business day.</span>
                 </div>
               </div>
