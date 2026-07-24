@@ -26,7 +26,7 @@ export function SiteNav() {
               to={l.to}
               className="px-3 py-2 text-sm text-muted-foreground hover:text-foreground transition-colors rounded-md"
               activeProps={{ className: "px-3 py-2 text-sm text-foreground rounded-md" }}
-              activeOptions={{ exact: l.to === "/" }}
+              activeOptions={{ exact: false }}
             >
               {l.label}
             </Link>
