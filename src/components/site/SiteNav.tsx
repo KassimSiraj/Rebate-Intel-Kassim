@@ -38,12 +38,14 @@ export function SiteNav() {
         </nav>
 
         <div className="hidden lg:flex items-center gap-2">
-          <Link
-            to="/contact"
+          <a
+            href="https://cal.com/rebateintel/30min"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-md bg-foreground px-4 py-2 text-sm font-medium text-background transition-colors hover:bg-foreground/90"
           >
             Book an AI Positioning strategy call
-          </Link>
+          </a>
         </div>
 
         <button
@@ -68,13 +70,15 @@ export function SiteNav() {
                 {l.label}
               </Link>
             ))}
-            <Link
-              to="/contact"
+            <a
+              href="https://cal.com/rebateintel/30min"
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setOpen(false)}
               className="mt-3 inline-flex items-center justify-center rounded-md bg-foreground px-4 py-2.5 text-sm font-medium text-background"
             >
               Book an AI Positioning strategy call
-            </Link>
+            </a>
           </div>
         </div>
       )}

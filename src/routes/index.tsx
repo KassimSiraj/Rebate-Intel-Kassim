@@ -62,12 +62,14 @@ function Hero() {
             </p>
           </div>
           <div className="mt-8 flex flex-wrap gap-3">
-            <Link
-              to="/contact"
+            <a
+              href="https://cal.com/rebateintel/30min"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-md bg-foreground px-5 py-3 text-sm font-medium text-background transition-colors hover:bg-foreground/90"
             >
               Book an AI Positioning strategy call. <ArrowRight className="h-4 w-4" />
-            </Link>
+            </a>
           </div>
           <div className="mt-10 flex items-center gap-6 text-xs text-muted-foreground">
             <div className="flex items-center gap-2"><Check className="h-4 w-4 text-brand" /> Commercial solar focus</div>

@@ -1,4 +1,3 @@
-import { Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 
 export function FinalCTA() {
@@ -14,12 +13,14 @@ export function FinalCTA() {
               In a 30-minute strategy call, we'll show you how ChatGPT, Gemini, Claude, and Perplexity describe your company today — and what it takes to change that.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Link
-                to="/contact"
+              <a
+                href="https://cal.com/rebateintel/30min"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-md bg-background px-5 py-3 text-sm font-medium text-foreground transition-colors hover:bg-background/90"
               >
                 Book an AI Positioning strategy call <ArrowRight className="h-4 w-4" />
-              </Link>
+              </a>
             </div>
           </div>
           <div aria-hidden className="pointer-events-none absolute -right-32 -bottom-32 h-96 w-96 rounded-full border border-background/10" />
