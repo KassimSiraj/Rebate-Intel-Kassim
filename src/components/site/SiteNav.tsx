@@ -3,12 +3,8 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
 const links = [
-  { to: "/", label: "Home" },
   { to: "/solutions", label: "Solutions" },
-  { to: "/industries", label: "Industries" },
-  { to: "/resources", label: "Resources" },
   { to: "/about", label: "About" },
-  { to: "/contact", label: "Contact" },
 ] as const;
 
 export function SiteNav() {
