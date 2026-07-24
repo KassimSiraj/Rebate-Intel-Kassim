@@ -17,14 +17,13 @@ export function SiteFooter() {
 
           <FooterCol title="Company">
             <FooterLink to="/about">About</FooterLink>
-            <FooterLink to="/case-studies">Case Studies</FooterLink>
             <FooterLink to="/contact">Contact</FooterLink>
           </FooterCol>
 
           <FooterCol title="Solutions">
-            <FooterLink to="/solutions">AI Visibility Audit</FooterLink>
-            <FooterLink to="/solutions">Competitor Intelligence</FooterLink>
-            <FooterLink to="/solutions">Authority Building</FooterLink>
+            <FooterLink to="/solutions">AI Recommendation Analysis</FooterLink>
+            <FooterLink to="/solutions">Competitive AI Benchmark</FooterLink>
+            <FooterLink to="/solutions">Commercial Authority Positioning</FooterLink>
             <FooterLink to="/solutions">Content Strategy</FooterLink>
           </FooterCol>
 

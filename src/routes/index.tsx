@@ -7,17 +7,17 @@ import { FinalCTA } from "@/components/site/CTA";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Rebate Intel — Become the Solar Company AI Recommends" },
+      { title: "Rebate Intel — Winning the project starts before the RFP." },
       {
         name: "description",
         content:
-          "Commercial buyers are asking ChatGPT, Gemini, Claude, and Perplexity which solar companies to trust. We make sure they recommend yours.",
+          "Buyers are asking AI which commercial solar companies to trust. RebateIntel positions your company as the recommendation they see first.",
       },
-      { property: "og:title", content: "Rebate Intel — Become the Solar Company AI Recommends" },
+      { property: "og:title", content: "Rebate Intel — Winning the project starts before the RFP." },
       {
         property: "og:description",
         content:
-          "AI visibility for commercial solar companies. Audit, intelligence, and authority building for ChatGPT, Gemini, Claude, and Perplexity.",
+          "Buyers are asking AI which commercial solar companies to trust. RebateIntel positions your company as the recommendation they see first.",
       },
       { property: "og:url", content: "/" },
     ],
@@ -51,17 +51,22 @@ function Hero() {
             AI visibility for commercial solar
           </div>
           <h1 className="mt-6 text-5xl md:text-6xl lg:text-7xl font-semibold text-foreground text-balance leading-[1.02]">
-            Become the solar company <span className="text-brand">AI recommends</span>.
+            Winning the project increasingly starts <span className="text-brand">before the RFP</span>.
           </h1>
-          <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed">
-            Commercial buyers are increasingly asking ChatGPT, Gemini, and Perplexity which solar companies they should trust. We help commercial solar companies become more discoverable, more authoritative, and more frequently recommended across AI-powered search.
-          </p>
+          <div className="mt-6 space-y-4 text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed">
+            <p>
+              Buyers are asking AI which commercial solar companies they should trust. Those recommendations shape who makes the shortlist—and who never gets considered.
+            </p>
+            <p>
+              RebateIntel helps position your company as the recommendation buyers see first.
+            </p>
+          </div>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
               to="/contact"
               className="inline-flex items-center gap-2 rounded-md bg-foreground px-5 py-3 text-sm font-medium text-background transition-colors hover:bg-foreground/90"
             >
-              Book 15 min. WhatsApp call. <ArrowRight className="h-4 w-4" />
+              Book an AI Positioning strategy call. <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
           <div className="mt-10 flex items-center gap-6 text-xs text-muted-foreground">
@@ -161,17 +166,17 @@ function Stat({ number, label }: { number: string; label: string }) {
 const services = [
   {
     icon: Microscope,
-    title: "AI Visibility Audit",
+    title: "AI Recommendation Analysis",
     desc: "Analyze how leading AI systems currently understand, describe, and recommend your business.",
   },
   {
     icon: BarChart3,
-    title: "Competitor Intelligence",
+    title: "Competitive AI Benchmark",
     desc: "Benchmark your visibility against competitors across the AI search environments your buyers use.",
   },
   {
     icon: ShieldCheck,
-    title: "Authority Building",
+    title: "Commercial Authority Positioning",
     desc: "Develop AI-citable assets — research, data, and references — that raise your recommendation likelihood.",
   },
   {
@@ -181,7 +186,7 @@ const services = [
   },
   {
     icon: Sparkles,
-    title: "Digital Trust Signals",
+    title: "AI Trust Infrastructure",
     desc: "Reviews, citations, structured data, and entity optimization that compound your AI authority.",
   },
 ];
@@ -341,101 +346,3 @@ function ComparisonCard({
   );
 }
 
-const caseStudies = [
-  {
-    name: "Arizona Solar Wave",
-    type: "Commercial AI Visibility Audit",
-    summary: "Mapping recommendation share across four AI platforms for an Arizona-based EPC.",
-  },
-  {
-    name: "Solar Electric Freedom",
-    type: "Commercial AI Visibility Audit",
-    summary: "Identifying the authority gaps that kept a top-rated installer off AI shortlists.",
-  },
-  {
-    name: "Net Zero Solar",
-    type: "Commercial AI Visibility Audit",
-    summary: "Building a citable knowledge base that AI models reference by name.",
-  },
-];
-
-function CaseStudiesPreview() {
-  return (
-    <Section>
-      <div className="flex items-end justify-between gap-6 flex-wrap">
-        <SectionHeader
-          eyebrow="Case studies"
-          title="Audits from real commercial solar companies."
-        />
-        <Link
-          to="/case-studies"
-          className="inline-flex items-center gap-1.5 text-sm font-medium text-foreground hover:text-brand"
-        >
-          View all <ArrowRight className="h-3.5 w-3.5" />
-        </Link>
-      </div>
-      <div className="mt-10 grid md:grid-cols-3 gap-5">
-        {caseStudies.map((c) => (
-          <article
-            key={c.name}
-            className="group rounded-2xl border border-border bg-background overflow-hidden hover:shadow-card transition-shadow"
-          >
-            <div className="aspect-[16/10] bg-gradient-to-br from-surface to-brand-muted/40 hairline-b" />
-            <div className="p-6">
-              <div className="text-xs font-medium text-brand">{c.type}</div>
-              <h3 className="mt-2 text-lg font-semibold text-foreground">{c.name}</h3>
-              <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{c.summary}</p>
-              <Link
-                to="/case-studies"
-                className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-foreground group-hover:text-brand"
-              >
-                Read more <ArrowRight className="h-3.5 w-3.5" />
-              </Link>
-            </div>
-          </article>
-        ))}
-      </div>
-    </Section>
-  );
-}
-
-const industries = [
-  "Commercial Solar",
-  "Industrial Energy",
-  "Renewable Energy",
-  "Energy Storage",
-  "Commercial Construction",
-  "Facility Management",
-];
-
-function IndustriesStrip() {
-  return (
-    <Section surface>
-      <div className="grid lg:grid-cols-12 gap-10 items-center">
-        <div className="lg:col-span-5">
-          <SectionHeader
-            eyebrow="Industries"
-            title="Built for energy and the built environment."
-            description="Deep specialization in commercial solar, with adjacent expertise across the categories your buyers also evaluate."
-          />
-          <Link
-            to="/industries"
-            className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-brand"
-          >
-            See all industries <ArrowRight className="h-3.5 w-3.5" />
-          </Link>
-        </div>
-        <div className="lg:col-span-7 grid sm:grid-cols-2 gap-3">
-          {industries.map((i) => (
-            <div
-              key={i}
-              className="rounded-xl border border-border bg-background px-5 py-4 text-sm font-medium text-foreground"
-            >
-              {i}
-            </div>
-          ))}
-        </div>
-      </div>
-    </Section>
-  );
-}

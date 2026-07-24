@@ -9,7 +9,7 @@ export const Route = createFileRoute("/solutions")({
       { title: "Solutions — Rebate Intel" },
       { name: "description", content: "Five disciplines that make commercial solar companies recommended by ChatGPT, Gemini, Claude, and Perplexity." },
       { property: "og:title", content: "Solutions — Rebate Intel" },
-      { property: "og:description", content: "AI Visibility Audit, Competitor Intelligence, Authority Building, Content Strategy, and Digital Trust Signals." },
+      { property: "og:description", content: "AI Recommendation Analysis, Competitive AI Benchmark, Commercial Authority Positioning, Content Strategy, and AI Trust Infrastructure." },
       { property: "og:url", content: "/solutions" },
     ],
     links: [{ rel: "canonical", href: "/solutions" }],
@@ -20,7 +20,7 @@ export const Route = createFileRoute("/solutions")({
 const solutions = [
   {
     icon: Microscope,
-    title: "AI Visibility Audit",
+    title: "AI Recommendation Analysis",
     summary: "Analyze how AI systems currently understand and recommend your business.",
     points: [
       "Per-platform recommendation share (ChatGPT, Gemini, Claude, Perplexity)",
@@ -30,7 +30,7 @@ const solutions = [
   },
   {
     icon: BarChart3,
-    title: "Competitor Intelligence",
+    title: "Competitive AI Benchmark",
     summary: "Benchmark your visibility against direct competitors inside AI search.",
     points: [
       "Side-by-side recommendation share by region and segment",
@@ -40,7 +40,7 @@ const solutions = [
   },
   {
     icon: ShieldCheck,
-    title: "Authority Building",
+    title: "Commercial Authority Positioning",
     summary: "Develop AI-citable assets that compound your recommendation likelihood.",
     points: [
       "Original research and data assets AI can quote",
@@ -60,7 +60,7 @@ const solutions = [
   },
   {
     icon: Sparkles,
-    title: "Digital Trust Signals",
+    title: "AI Trust Infrastructure",
     summary: "Reviews, citations, structured data, and entity optimization.",
     points: [
       "Schema and structured data implementation",

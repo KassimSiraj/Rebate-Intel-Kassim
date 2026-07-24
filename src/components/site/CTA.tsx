@@ -18,7 +18,7 @@ export function FinalCTA() {
                 to="/contact"
                 className="inline-flex items-center gap-2 rounded-md bg-background px-5 py-3 text-sm font-medium text-foreground transition-colors hover:bg-background/90"
               >
-                Book your strategy call <ArrowRight className="h-4 w-4" />
+                Book an AI Positioning strategy call <ArrowRight className="h-4 w-4" />
               </Link>
             </div>
           </div>

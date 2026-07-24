@@ -6,7 +6,6 @@ const links = [
   { to: "/", label: "Home" },
   { to: "/solutions", label: "Solutions" },
   { to: "/industries", label: "Industries" },
-  { to: "/case-studies", label: "Case Studies" },
   { to: "/resources", label: "Resources" },
   { to: "/about", label: "About" },
   { to: "/contact", label: "Contact" },
@@ -43,7 +42,7 @@ export function SiteNav() {
             to="/contact"
             className="inline-flex items-center justify-center rounded-md bg-foreground px-4 py-2 text-sm font-medium text-background transition-colors hover:bg-foreground/90"
           >
-            Book Strategy Call
+            Book an AI Positioning strategy call
           </Link>
         </div>
 
@@ -74,7 +73,7 @@ export function SiteNav() {
               onClick={() => setOpen(false)}
               className="mt-3 inline-flex items-center justify-center rounded-md bg-foreground px-4 py-2.5 text-sm font-medium text-background"
             >
-              Book Strategy Call
+              Book an AI Positioning strategy call
             </Link>
           </div>
         </div>
