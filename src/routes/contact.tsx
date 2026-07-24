@@ -6,10 +6,10 @@ import { ArrowRight, Mail, Calendar, Check } from "lucide-react";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Book an AI Visibility Strategy Call" },
-      { name: "description", content: "Book a 30-minute AI visibility strategy call with the Rebate Intel team." },
+      { title: "Contact — Book an AI Positioning Strategy Call" },
+      { name: "description", content: "Book a 30-minute AI Positioning strategy call with the Rebate Intel team." },
       { property: "og:title", content: "Contact — Rebate Intel" },
-      { property: "og:description", content: "Book a 30-minute AI visibility strategy call." },
+      { property: "og:description", content: "Book a 30-minute AI Positioning strategy call." },
       { property: "og:url", content: "/contact" },
     ],
     links: [{ rel: "canonical", href: "/contact" }],
@@ -25,10 +25,10 @@ function ContactPage() {
         <div className="lg:col-span-5">
           <div className="eyebrow mb-4">Contact</div>
           <h1 className="text-4xl md:text-5xl font-semibold text-foreground text-balance">
-            Book your AI visibility strategy call.
+            Book an AI Positioning strategy call.
           </h1>
           <p className="mt-5 text-lg text-muted-foreground leading-relaxed">
-            A 30-minute call with our team. We'll show you live how the major AI platforms describe your company today — and what it would take to change that.
+            A 30-minute call with our team. We'll show you live how the major AI platforms describe your company today — and what it would take to become the recommendation buyers see first.
           </p>
 
           <ul className="mt-8 space-y-3">
@@ -44,8 +44,8 @@ function ContactPage() {
           </ul>
 
           <div className="mt-10 space-y-3 text-sm">
-            <a href="mailto:hello@axiomvisibility.com" className="inline-flex items-center gap-2 text-foreground hover:text-brand">
-              <Mail className="h-4 w-4" /> hello@axiomvisibility.com
+            <a href="mailto:kassim@rebateintel.com" className="inline-flex items-center gap-2 text-foreground hover:text-brand">
+              <Mail className="h-4 w-4" /> kassim@rebateintel.com
             </a>
             <div className="flex items-center gap-2 text-muted-foreground">
               <Calendar className="h-4 w-4" /> Response within one business day
@@ -90,7 +90,7 @@ function ContactPage() {
                     type="submit"
                     className="inline-flex items-center gap-2 rounded-md bg-foreground px-5 py-3 text-sm font-medium text-background hover:bg-foreground/90"
                   >
-                    Book strategy call <ArrowRight className="h-4 w-4" />
+                    Book an AI Positioning strategy call <ArrowRight className="h-4 w-4" />
                   </button>
                   <span className="text-xs text-muted-foreground">We reply within one business day.</span>
                 </div>
