@@ -36,13 +36,14 @@ export function SiteFooter() {
 
         <div className="mt-14 pt-6 hairline-t flex flex-col md:flex-row items-start md:items-center justify-between gap-3">
           <p className="text-xs text-muted-foreground">
-            © {new Date().getFullYear()} Rebate Intel. All rights reserved.
+            © 2026 RebateIntel. All rights reserved.
           </p>
           <div className="flex items-center gap-5">
-            <Link to="/contact" className="text-xs text-muted-foreground hover:text-foreground">Privacy</Link>
-            <Link to="/contact" className="text-xs text-muted-foreground hover:text-foreground">Terms</Link>
+            <Link to="/privacy" className="text-xs text-muted-foreground hover:text-foreground">Privacy Policy</Link>
+            <Link to="/terms" className="text-xs text-muted-foreground hover:text-foreground">Terms of Service</Link>
           </div>
         </div>
+
       </div>
     </footer>
   );
