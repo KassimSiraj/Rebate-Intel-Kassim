@@ -279,34 +279,34 @@ function WhyAIRecommends() {
     <Section surface>
       <SectionHeader
         eyebrow="Why AI picks one over another"
-        title="Two solar companies. One gets recommended."
+        title="Being the Better Installer Doesn't Guarantee Being Recommended."
         description="AI models look for signals of authority and clarity. Excellence in operations alone doesn't translate into recommendations."
       />
       <div className="mt-12 grid md:grid-cols-2 gap-5">
         <ComparisonCard
           variant="muted"
           tag="Company A"
-          headline="Great operations. Quiet online."
+          headline="Excellent installer. Hard for AI to trust."
           rows={[
-            { ok: true, text: "Strong installations & customer satisfaction" },
-            { ok: false, text: "Few online authority signals" },
-            { ok: false, text: "Minimal educational content" },
-            { ok: false, text: "No structured data or entity optimization" },
+            { ok: true, text: "Strong reputation with customers" },
+            { ok: true, text: "Excellent project execution" },
+            { ok: false, text: "AI has limited confidence in recommending the company" },
+            { ok: false, text: "Competitors have stronger digital authority" },
           ]}
-          outcome="Rarely recommended"
+          outcome="Rarely appears in AI recommendations."
           outcomeNeg
         />
         <ComparisonCard
           variant="brand"
           tag="Company B"
-          headline="Equally great. Visibly authoritative."
+          headline="Excellent installer. Easy for AI to recommend."
           rows={[
-            { ok: true, text: "Educational content and original research" },
-            { ok: true, text: "Documented case studies with measurable outcomes" },
-            { ok: true, text: "Structured data and entity optimization" },
-            { ok: true, text: "Citations and consistent third-party trust signals" },
+            { ok: true, text: "Strong reputation" },
+            { ok: true, text: "Clearly understood across AI platforms" },
+            { ok: true, text: "Strong digital authority" },
+            { ok: true, text: "Consistent recognition across trusted sources" },
           ]}
-          outcome="Frequently recommended"
+          outcome="Frequently recommended."
         />
       </div>
     </Section>
