@@ -14,7 +14,7 @@ export function SiteNav() {
       <div className="container-page flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center gap-2 group">
           <img src="/favicon.png" alt="Rebate Intel" className="h-8 w-8" />
-          <span className="font-semibold tracking-tight text-foreground">
+          <span className="text-xl font-bold tracking-tight text-brand">
             Rebate Intel
           </span>
         </Link>
