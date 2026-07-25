@@ -30,7 +30,6 @@ export function SiteFooter() {
             <FooterLink to="/resources">Articles</FooterLink>
             <FooterLink to="/industries">Industries</FooterLink>
             <a href="https://www.linkedin.com" target="_blank" rel="noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition-colors">LinkedIn</a>
-            <a href="mailto:hello@rebateintel.com" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Email</a>
           </FooterCol>
         </div>
 
