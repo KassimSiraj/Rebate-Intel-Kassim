@@ -226,10 +226,26 @@ function Services() {
 }
 
 const processSteps = [
-  { icon: Microscope, title: "Research", desc: "Map how AI models currently describe your category, competitors, and brand." },
-  { icon: LineChart, title: "Analyze", desc: "Identify the authority gaps and content patterns that drive recommendations." },
-  { icon: Wrench, title: "Optimize", desc: "Build the citable content, structured data, and trust signals AI relies on." },
-  { icon: Activity, title: "Measure", desc: "Track recommendation share across ChatGPT, Gemini, Claude, and Perplexity." },
+  {
+    icon: Microscope,
+    title: "AI Recommendation Assessment",
+    desc: "We benchmark how ChatGPT, Gemini, Perplexity, and Google AI currently understand and recommend your company compared with your competitors.",
+  },
+  {
+    icon: LineChart,
+    title: "Opportunity Roadmap",
+    desc: "We identify the highest-impact opportunities preventing your company from being consistently recommended. Notice we didn't say how.",
+  },
+  {
+    icon: Wrench,
+    title: "Implementation",
+    desc: "Our team implements the approved improvements across your digital presence to strengthen AI recommendation signals. Still no secret.",
+  },
+  {
+    icon: Activity,
+    title: "Continuous Monitoring",
+    desc: "We monitor recommendation trends and refine your AI presence as platforms evolve.",
+  },
 ];
 
 function Process() {
