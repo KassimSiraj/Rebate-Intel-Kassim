@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import logoAsset from "@/assets/Rebate_intel.png.asset.json";
+
 
 export function SiteFooter() {
   return (
@@ -7,11 +7,12 @@ export function SiteFooter() {
       <div className="container-page py-16">
         <div className="grid gap-10 md:grid-cols-4">
           <div className="md:col-span-1">
-            <img
-              src={logoAsset.url}
-              alt="Rebate Intel"
-              className="h-20 w-auto"
-            />
+            <Link to="/" className="flex items-center gap-2">
+              <img src="/favicon.png" alt="Rebate Intel" className="h-8 w-8" />
+              <span className="text-xl font-bold tracking-tight text-black">
+                Rebate Intel
+              </span>
+            </Link>
             <p className="mt-4 text-sm text-muted-foreground max-w-xs">
               Helping commercial solar companies become more likely to be recommended during AI-assisted buying decisions.
             </p>
