@@ -1,5 +1,5 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
-import { Microscope, BarChart3, ShieldCheck, FileText, Sparkles, ArrowRight, Check } from "lucide-react";
+import { createFileRoute } from "@tanstack/react-router";
+import { Microscope, BarChart3, ShieldCheck, FileText, Sparkles, Check } from "lucide-react";
 import { Section, SectionHeader } from "@/components/site/Section";
 import { FinalCTA } from "@/components/site/CTA";
 
@@ -103,9 +103,6 @@ function SolutionsPage() {
                     </li>
                   ))}
                 </ul>
-                <Link to="/contact" className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-brand">
-                  Discuss this engagement <ArrowRight className="h-3.5 w-3.5" />
-                </Link>
               </div>
             </div>
           ))}
