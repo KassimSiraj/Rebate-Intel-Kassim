@@ -10,7 +10,7 @@ export function SiteFooter() {
             <img
               src={logoAsset.url}
               alt="Rebate Intel"
-              className="h-9 w-auto"
+              className="h-14 w-auto"
             />
             <p className="mt-4 text-sm text-muted-foreground max-w-xs">
               Helping commercial solar companies become more likely to be recommended during AI-assisted buying decisions.
