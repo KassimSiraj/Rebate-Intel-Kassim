@@ -27,10 +27,12 @@ export function SiteFooter() {
           </FooterCol>
 
           <FooterCol title="Resources">
+            <FooterLink to="/research">Research</FooterLink>
             <FooterLink to="/resources">Articles</FooterLink>
             <FooterLink to="/industries">Industries</FooterLink>
             <a href="https://www.linkedin.com" target="_blank" rel="noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition-colors">LinkedIn</a>
           </FooterCol>
+
         </div>
 
         <div className="mt-14 pt-6 hairline-t flex flex-col md:flex-row items-start md:items-center justify-between gap-3">
