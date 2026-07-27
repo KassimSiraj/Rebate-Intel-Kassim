@@ -4,6 +4,7 @@ import { Menu, X } from "lucide-react";
 
 const links = [
   { to: "/solutions", label: "Solutions" },
+  { to: "/research", label: "Research" },
   { to: "/about", label: "About" },
 ] as const;
 
@@ -14,7 +15,7 @@ export function SiteNav() {
       <div className="container-page flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center gap-2 group">
           <img src="/favicon.png" alt="Rebate Intel" className="h-8 w-8" />
-          <span className="text-xl font-bold tracking-tight text-brand">
+          <span className="text-xl font-bold tracking-tight text-black">
             Rebate Intel
           </span>
         </Link>
