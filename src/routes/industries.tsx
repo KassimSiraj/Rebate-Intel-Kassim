@@ -37,7 +37,7 @@ function IndustriesPage() {
         />
         <div className="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {industries.map((i) => (
-            <div key={i.name} className="rounded-2xl border border-border bg-background p-6">
+            <div key={i.name} className="rounded-2xl border border-border bg-background p-6 card-lift">
               <div className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-brand-muted text-brand">
                 <i.icon className="h-5 w-5" />
               </div>

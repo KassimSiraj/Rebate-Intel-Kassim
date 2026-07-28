@@ -77,7 +77,7 @@ function ResearchPage() {
           {reports.map((r) => (
             <div
               key={r.title}
-              className="group flex flex-col rounded-2xl border border-border bg-background p-8 hover:shadow-card transition-shadow"
+              className="group flex flex-col rounded-2xl border border-border bg-background p-8 card-lift"
             >
               <BarChart3 className="h-6 w-6 text-brand" />
               <h3 className="mt-5 text-xl font-semibold text-foreground text-balance">{r.title}</h3>
@@ -101,7 +101,7 @@ function ResearchPage() {
         <SectionHeader eyebrow="Key Findings" title="What we keep seeing." />
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           {findings.map((f, i) => (
-            <div key={f} className="rounded-2xl border border-border bg-background p-8">
+            <div key={f} className="rounded-2xl border border-border bg-background p-8 card-lift">
               <div className="text-sm font-semibold text-brand">Finding #{i + 1}</div>
               <p className="mt-3 text-lg text-foreground leading-relaxed text-balance">{f}</p>
             </div>
