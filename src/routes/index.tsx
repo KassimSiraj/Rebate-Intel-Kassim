@@ -35,19 +35,24 @@ function Home() {
       <Services />
       <Process />
       <WhyAIRecommends />
+      <FAQ />
+      <FinalCTA />
     </>
   );
 }
-// removed sections below
-function _Unused() { return null; }
 
 function Hero() {
   return (
     <section className="relative overflow-hidden">
-      <div className="container-page pt-16 pb-20 md:pt-24 md:pb-28 grid lg:grid-cols-12 gap-12 items-center">
-        <div className="lg:col-span-7">
-          <div className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-3 py-1 text-xs text-muted-foreground">
-            <span className="h-1.5 w-1.5 rounded-full bg-brand" />
+      <div aria-hidden className="pointer-events-none absolute inset-0 grid-backdrop opacity-70" />
+      <div aria-hidden className="pointer-events-none absolute inset-x-0 -top-40 h-[520px] brand-glow" />
+      <div className="relative container-page pt-16 pb-20 md:pt-24 md:pb-28 grid lg:grid-cols-12 gap-12 items-center">
+        <div className="lg:col-span-7 fade-up">
+          <div className="inline-flex items-center gap-2 rounded-full border border-border bg-background/70 backdrop-blur px-3 py-1 text-xs text-muted-foreground shadow-card">
+            <span className="relative flex h-1.5 w-1.5">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-brand opacity-60" />
+              <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-brand" />
+            </span>
             AI visibility for commercial solar
           </div>
           <h1 className="mt-6 text-5xl md:text-6xl lg:text-7xl font-semibold text-foreground text-balance leading-[1.02]">
@@ -66,23 +71,30 @@ function Hero() {
               href="https://cal.com/rebateintel/30min"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-md bg-foreground px-5 py-3 text-sm font-medium text-background transition-colors hover:bg-foreground/90"
+              className="inline-flex items-center gap-2 rounded-md bg-foreground px-5 py-3 text-sm font-medium text-background transition-all hover:bg-foreground/90 hover:-translate-y-0.5 shadow-card"
             >
               Book an AI Positioning strategy call. <ArrowRight className="h-4 w-4" />
             </a>
+            <Link
+              to="/research"
+              className="inline-flex items-center gap-2 rounded-md border border-border bg-background px-5 py-3 text-sm font-medium text-foreground transition-colors hover:bg-surface"
+            >
+              See the research
+            </Link>
           </div>
           <div className="mt-10 flex items-center gap-6 text-xs text-muted-foreground">
             <div className="flex items-center gap-2"><Check className="h-4 w-4 text-brand" /> Commercial solar focus</div>
           </div>
         </div>
         <div className="lg:col-span-5">
-          <div className="relative">
+          <div className="relative fade-up">
+            <div aria-hidden className="absolute -inset-6 rounded-full bg-brand/10 blur-3xl" />
             <img
               src={heroImage}
               alt="AI platforms connecting to a trusted commercial solar business"
               width={1280}
               height={1024}
-              className="w-full h-auto"
+              className="relative w-full h-auto"
             />
           </div>
         </div>
@@ -94,26 +106,30 @@ function Hero() {
 const aiPlatforms = ["ChatGPT", "Google AI", "Gemini", "Claude", "Perplexity"];
 
 function TrustBar() {
+  const loop = [...aiPlatforms, ...aiPlatforms, ...aiPlatforms, ...aiPlatforms];
   return (
     <section className="hairline-t hairline-b bg-surface">
       <div className="container-page py-10">
         <p className="text-center text-xs uppercase tracking-widest text-muted-foreground">
           Helping companies prepare for the future of AI-powered buying
         </p>
-        <div className="mt-6 grid grid-cols-2 sm:grid-cols-5 gap-6 items-center">
-          {aiPlatforms.map((p) => (
-            <div
-              key={p}
-              className="text-center text-base md:text-lg font-semibold text-foreground/70 tracking-tight"
+      </div>
+      <div className="relative overflow-hidden pb-10 [mask-image:linear-gradient(to_right,transparent,#000_12%,#000_88%,transparent)]">
+        <div className="marquee-track gap-14 pr-14">
+          {loop.map((p, i) => (
+            <span
+              key={`${p}-${i}`}
+              className="shrink-0 text-base md:text-lg font-semibold text-foreground/60 tracking-tight"
             >
               {p}
-            </div>
+            </span>
           ))}
         </div>
       </div>
     </section>
   );
 }
+
 
 const problemQueries = [
   "Best commercial solar company in Arizona",
