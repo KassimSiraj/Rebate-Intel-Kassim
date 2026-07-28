@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, Search, BarChart3, ShieldCheck, FileText, Sparkles, Check, X, Microscope, LineChart, Wrench, Activity } from "lucide-react";
+import { ArrowRight, Search, BarChart3, ShieldCheck, FileText, Sparkles, Check, X, Microscope, LineChart, Wrench, Activity, Plus } from "lucide-react";
 import heroImage from "@/assets/hero-network.png";
 import { Section, SectionHeader } from "@/components/site/Section";
 import { FinalCTA } from "@/components/site/CTA";
@@ -174,7 +174,7 @@ function Problem() {
 
 function Stat({ number, label }: { number: string; label: string }) {
   return (
-    <div className="rounded-xl border border-border bg-background p-5">
+    <div className="rounded-xl border border-border bg-background p-5 card-lift">
       <div className="text-2xl md:text-3xl font-semibold tracking-tight text-foreground">{number}</div>
       <div className="mt-2 text-xs text-muted-foreground leading-relaxed">{label}</div>
     </div>
@@ -221,7 +221,7 @@ function Services() {
         {services.map((s) => (
           <div
             key={s.title}
-            className="group rounded-2xl border border-border bg-background p-6 md:p-7 hover:shadow-card transition-shadow"
+            className="group rounded-2xl border border-border bg-background p-6 md:p-7 card-lift"
           >
             <div className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-brand-muted text-brand">
               <s.icon className="h-5 w-5" />
@@ -274,7 +274,7 @@ function Process() {
       />
       <div className="mt-12 grid md:grid-cols-2 lg:grid-cols-4 gap-5">
         {processSteps.map((s, i) => (
-          <div key={s.title} className="rounded-2xl border border-border bg-background p-6">
+          <div key={s.title} className="rounded-2xl border border-border bg-background p-6 card-lift">
             <div className="flex items-center justify-between">
               <div className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-foreground text-background">
                 <s.icon className="h-5 w-5" />
@@ -380,3 +380,51 @@ function ComparisonCard({
   );
 }
 
+
+const faqs = [
+  {
+    q: "What exactly is AI positioning?",
+    a: "It's the work of making your company legible, credible, and citable to AI models — so that when a buyer asks ChatGPT, Gemini, Claude, or Perplexity for a commercial solar partner, your company is part of the answer.",
+  },
+  {
+    q: "How is this different from SEO?",
+    a: "SEO competes for a list of blue links. AI positioning competes for a single recommendation. The signals overlap, but the strategy, the assets, and the way success is measured are different.",
+  },
+  {
+    q: "How do you measure results?",
+    a: "We benchmark recommendation share per platform and per buyer prompt, then track how it moves over time against your named competitors.",
+  },
+  {
+    q: "Who is this for?",
+    a: "Commercial solar EPCs, developers, and installers with real project execution behind them — companies that deserve to be recommended but aren't yet.",
+  },
+  {
+    q: "How quickly do things change?",
+    a: "The assessment lands in weeks. Recommendation movement follows the authority work, which compounds over a few months rather than overnight.",
+  },
+];
+
+function FAQ() {
+  return (
+    <Section>
+      <div className="grid lg:grid-cols-12 gap-12">
+        <div className="lg:col-span-4">
+          <SectionHeader eyebrow="FAQ" title="Questions we hear most." />
+        </div>
+        <div className="lg:col-span-8 divide-y divide-border border-t border-border">
+          {faqs.map((f) => (
+            <details key={f.q} className="group py-5">
+              <summary className="flex cursor-pointer items-center justify-between gap-6 list-none">
+                <span className="text-base md:text-lg font-medium text-foreground">{f.q}</span>
+                <Plus className="h-4 w-4 shrink-0 text-brand transition-transform duration-200 group-open:rotate-45" />
+              </summary>
+              <p className="mt-3 max-w-2xl text-sm md:text-base text-muted-foreground leading-relaxed">
+                {f.a}
+              </p>
+            </details>
+          ))}
+        </div>
+      </div>
+    </Section>
+  );
+}
