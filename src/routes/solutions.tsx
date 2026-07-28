@@ -86,7 +86,7 @@ function SolutionsPage() {
 
         <div className="mt-14 space-y-5">
           {solutions.map((s) => (
-            <div key={s.title} className="rounded-2xl border border-border bg-background p-6 md:p-10 grid md:grid-cols-12 gap-8 card-lift">
+            <div key={s.title} id={s.title.toLowerCase().replace(/\s+/g, "-")} className="scroll-mt-24 rounded-2xl border border-border bg-background p-6 md:p-10 grid md:grid-cols-12 gap-8 card-lift">
               <div className="md:col-span-4">
                 <div className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-brand-muted text-brand">
                   <s.icon className="h-5 w-5" />

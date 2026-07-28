@@ -98,6 +98,7 @@ function ResearchPage() {
       </Section>
 
       <Section>
+        <span id="key-findings" className="block scroll-mt-24" />
         <SectionHeader eyebrow="Key Findings" title="What we keep seeing." />
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           {findings.map((f, i) => (
