@@ -77,10 +77,10 @@ export function Plans() {
             target="_blank"
             rel="noopener noreferrer"
             className={cn(
-              "mt-7 inline-flex w-full items-center justify-center rounded-md px-5 py-3 text-sm font-medium transition-colors",
+              "mt-7 inline-flex w-full items-center justify-center px-5 py-3 text-sm font-semibold",
               p.featured
-                ? "bg-foreground text-background hover:bg-foreground/90"
-                : "border border-border text-foreground hover:bg-surface",
+                ? "liquid-glass"
+                : "liquid-glass-light border border-border text-foreground",
             )}
           >
             {p.cta}

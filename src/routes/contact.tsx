@@ -90,7 +90,7 @@ function ContactPage() {
                     href="https://cal.com/rebateintel/30min"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 rounded-md bg-foreground px-5 py-3 text-sm font-medium text-background hover:bg-foreground/90"
+                    className="liquid-glass inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold"
                   >
                     Book an AI Positioning strategy call <ArrowRight className="h-4 w-4" />
                   </a>

@@ -125,7 +125,7 @@ export function SiteNav() {
             href="https://cal.com/rebateintel/30min"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center rounded-md bg-foreground px-4 py-2 text-sm font-medium text-background transition-colors hover:bg-foreground/90"
+            className="liquid-glass inline-flex items-center justify-center px-5 py-2 text-sm font-semibold"
           >
             Book Strategy Call
           </a>
@@ -173,7 +173,7 @@ export function SiteNav() {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setOpen(false)}
-              className="mt-3 inline-flex items-center justify-center rounded-md bg-foreground px-4 py-2.5 text-sm font-medium text-background"
+              className="liquid-glass mt-3 inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold"
             >
               Book Strategy Call
             </a>
