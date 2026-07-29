@@ -92,13 +92,13 @@ function Hero() {
               href="https://cal.com/rebateintel/30min"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-md bg-foreground px-5 py-3 text-sm font-medium text-background transition-all hover:bg-foreground/90 hover:-translate-y-0.5 shadow-card"
+              className="liquid-glass inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold"
             >
               Book an AI Positioning strategy call. <ArrowRight className="h-4 w-4" />
             </a>
             <Link
               to="/research"
-              className="inline-flex items-center gap-2 rounded-md border border-border bg-background px-5 py-3 text-sm font-medium text-foreground transition-colors hover:bg-surface"
+              className="liquid-glass-light inline-flex items-center gap-2 border border-border px-6 py-3 text-sm font-semibold text-foreground"
             >
               See the research
             </Link>

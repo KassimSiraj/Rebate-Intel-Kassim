@@ -63,7 +63,7 @@ function ResearchPage() {
           <div className="mt-8">
             <a
               href="#latest-research"
-              className="inline-flex items-center gap-2 rounded-md bg-foreground px-5 py-3 text-sm font-medium text-background transition-colors hover:bg-foreground/90"
+              className="liquid-glass inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold"
             >
               View Latest Research <ArrowRight className="h-4 w-4" />
             </a>
@@ -139,7 +139,7 @@ function ResearchPage() {
                   href="https://cal.com/rebateintel/30min"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-md bg-background px-5 py-3 text-sm font-medium text-foreground transition-colors hover:bg-background/90"
+                  className="liquid-glass inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold"
                 >
                   Book a 30-minute AI recommendation strategy call
                   <ArrowRight className="h-4 w-4" />
