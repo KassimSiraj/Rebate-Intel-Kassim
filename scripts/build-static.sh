@@ -4,7 +4,7 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
-PAGES=("/" "/solutions" "/industries" "/research" "/resources" "/about" "/contact" "/privacy" "/terms")
+PAGES=("/" "/book" "/solutions" "/industries" "/research" "/resources" "/about" "/contact" "/privacy" "/terms")
 PORT=4321
 
 echo "> Building..."
