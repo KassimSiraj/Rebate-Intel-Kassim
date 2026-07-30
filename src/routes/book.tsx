@@ -1,0 +1,202 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { useState } from "react";
+import { useServerFn } from "@tanstack/react-start";
+import { Section } from "@/components/site/Section";
+import { submitLead } from "@/lib/leads.functions";
+import { ArrowRight, Check, Calendar, Loader2 } from "lucide-react";
+
+const CAL_LINK = "https://cal.com/rebateintel/15min";
+
+export const Route = createFileRoute("/book")({
+  head: () => ({
+    meta: [
+      { title: "Book an AI Positioning Strategy Call — Rebate Intel" },
+      {
+        name: "description",
+        content:
+          "Share four details and unlock the calendar to book a 15-minute AI positioning strategy call with Rebate Intel.",
+      },
+      { property: "og:title", content: "Book an AI Positioning Strategy Call" },
+      {
+        property: "og:description",
+        content: "Unlock the calendar and book a 15-minute AI positioning strategy call.",
+      },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+    links: [{ rel: "canonical", href: "/book" }],
+  }),
+  component: BookPage,
+});
+
+type Fields = { name: string; email: string; jobTitle: string; company: string };
+
+function BookPage() {
+  const send = useServerFn(submitLead);
+  const [fields, setFields] = useState<Fields>({ name: "", email: "", jobTitle: "", company: "" });
+  const [status, setStatus] = useState<"idle" | "saving" | "done">("idle");
+  const [error, setError] = useState<string | null>(null);
+
+  const complete =
+    fields.name.trim() !== "" &&
+    /\S+@\S+\.\S+/.test(fields.email.trim()) &&
+    fields.jobTitle.trim() !== "" &&
+    fields.company.trim() !== "";
+
+  async function onSubmit(e: React.FormEvent) {
+    e.preventDefault();
+    if (!complete || status === "saving") return;
+    setStatus("saving");
+    setError(null);
+    try {
+      await send({ data: fields });
+      setStatus("done");
+    } catch {
+      setError("We couldn't save your details. Please try again.");
+      setStatus("idle");
+    }
+  }
+
+  return (
+    <Section>
+      <div className="grid lg:grid-cols-12 gap-12">
+        <div className="lg:col-span-5">
+          <div className="eyebrow mb-4">Strategy call</div>
+          <h1 className="text-4xl md:text-5xl font-semibold text-foreground text-balance">
+            Book an AI Positioning strategy call.
+          </h1>
+          <p className="mt-5 text-lg text-muted-foreground leading-relaxed">
+            Tell us who you are and we'll open the calendar. On the call we show you live how the
+            major AI platforms describe your company today — and what it takes to become the
+            recommendation buyers see first.
+          </p>
+          <ul className="mt-8 space-y-3">
+            {[
+              "Live look at how 4 AI platforms describe your company",
+              "Honest assessment of your AI recommendation share",
+              "Clear next steps — no pressure, no pitch deck",
+            ].map((p) => (
+              <li key={p} className="flex items-start gap-3 text-sm text-foreground">
+                <Check className="h-4 w-4 mt-0.5 text-brand shrink-0" /> {p}
+              </li>
+            ))}
+          </ul>
+          <div className="mt-10 flex items-center gap-2 text-sm text-muted-foreground">
+            <Calendar className="h-4 w-4" /> 15 minutes, no obligation.
+          </div>
+        </div>
+
+        <div className="lg:col-span-7">
+          <div className="rounded-2xl border border-border bg-background p-6 md:p-8 shadow-card">
+            {status === "done" ? (
+              <div className="py-10 text-center">
+                <div className="mx-auto inline-flex h-12 w-12 items-center justify-center rounded-full bg-brand-muted text-brand">
+                  <Check className="h-6 w-6" />
+                </div>
+                <h2 className="mt-4 text-xl font-semibold text-foreground">
+                  Thanks, {fields.name.split(" ")[0]} — your calendar is unlocked.
+                </h2>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  Pick a 15-minute slot that works for you.
+                </p>
+                <a
+                  href={CAL_LINK}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="liquid-glass mt-8 inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold"
+                >
+                  Book strategy call <ArrowRight className="h-4 w-4" />
+                </a>
+              </div>
+            ) : (
+              <form onSubmit={onSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <Field
+                  label="Full name"
+                  name="name"
+                  value={fields.name}
+                  onChange={(v) => setFields((f) => ({ ...f, name: v }))}
+                />
+                <Field
+                  label="Work email"
+                  name="email"
+                  type="email"
+                  value={fields.email}
+                  onChange={(v) => setFields((f) => ({ ...f, email: v }))}
+                />
+                <Field
+                  label="Job title"
+                  name="jobTitle"
+                  value={fields.jobTitle}
+                  onChange={(v) => setFields((f) => ({ ...f, jobTitle: v }))}
+                />
+                <Field
+                  label="Company name"
+                  name="company"
+                  value={fields.company}
+                  onChange={(v) => setFields((f) => ({ ...f, company: v }))}
+                />
+
+                {error && (
+                  <p className="md:col-span-2 text-sm text-destructive">{error}</p>
+                )}
+
+                <div className="md:col-span-2 mt-2 flex flex-wrap items-center gap-3">
+                  <button
+                    type="submit"
+                    disabled={!complete || status === "saving"}
+                    className="liquid-glass inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold disabled:opacity-45 disabled:cursor-not-allowed"
+                  >
+                    {status === "saving" ? (
+                      <>
+                        Saving <Loader2 className="h-4 w-4 animate-spin" />
+                      </>
+                    ) : (
+                      <>
+                        Book strategy call <ArrowRight className="h-4 w-4" />
+                      </>
+                    )}
+                  </button>
+                  <span className="text-xs text-muted-foreground">
+                    All four fields are required to unlock the calendar.
+                  </span>
+                </div>
+              </form>
+            )}
+          </div>
+        </div>
+      </div>
+    </Section>
+  );
+}
+
+function Field({
+  label,
+  name,
+  type = "text",
+  value,
+  onChange,
+}: {
+  label: string;
+  name: string;
+  type?: string;
+  value: string;
+  onChange: (v: string) => void;
+}) {
+  return (
+    <div>
+      <label htmlFor={name} className="text-sm font-medium text-foreground">
+        {label} <span className="text-brand">*</span>
+      </label>
+      <input
+        id={name}
+        name={name}
+        type={type}
+        required
+        maxLength={200}
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
+        className="mt-2 w-full rounded-md border border-border bg-background px-3 py-2.5 text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
+      />
+    </div>
+  );
+}
