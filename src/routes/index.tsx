@@ -18,7 +18,6 @@ import { Reveal } from "@/components/site/Reveal";
 import { VisibilityChecker } from "@/components/site/VisibilityChecker";
 import { TabbedShowcase, type ShowcaseTab } from "@/components/site/TabbedShowcase";
 import { Plans } from "@/components/site/Plans";
-import { Testimonials } from "@/components/site/Testimonials";
 import { Newsletter } from "@/components/site/Newsletter";
 
 export const Route = createFileRoute("/")({
@@ -55,7 +54,6 @@ function Home() {
       <Process />
       <WhyAIRecommends />
       <PlansSection />
-      <Proof />
       <FAQ />
       <NewsletterSection />
       <FinalCTA />
@@ -502,23 +500,6 @@ function PlansSection() {
   );
 }
 
-function Proof() {
-  return (
-    <Section surface>
-      <Reveal>
-        <SectionHeader
-          eyebrow="What operators say"
-          title="Research they can act on."
-        />
-      </Reveal>
-      <Reveal delay={80}>
-        <div className="mt-12">
-          <Testimonials />
-        </div>
-      </Reveal>
-    </Section>
-  );
-}
 
 const faqs = [
   {
