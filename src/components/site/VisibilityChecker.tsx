@@ -83,7 +83,7 @@ export function VisibilityChecker({ compact = false }: { compact?: boolean }) {
             ))}
           </div>
           <a
-            href="https://cal.com/rebateintel/30min"
+            href="/book"
             target="_blank"
             rel="noopener noreferrer"
             className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-brand"

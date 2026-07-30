@@ -122,7 +122,7 @@ export function SiteNav() {
             Free AI check
           </Link>
           <a
-            href="https://cal.com/rebateintel/30min"
+            href="/book"
             target="_blank"
             rel="noopener noreferrer"
             className="liquid-glass inline-flex items-center justify-center px-5 py-2 text-sm font-semibold"
@@ -169,7 +169,7 @@ export function SiteNav() {
               Free AI check
             </Link>
             <a
-              href="https://cal.com/rebateintel/30min"
+              href="/book"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setOpen(false)}

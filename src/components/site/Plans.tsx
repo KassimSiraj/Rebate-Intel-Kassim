@@ -73,7 +73,7 @@ export function Plans() {
             ))}
           </ul>
           <a
-            href="https://cal.com/rebateintel/30min"
+            href="/book"
             target="_blank"
             rel="noopener noreferrer"
             className={cn(

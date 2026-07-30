@@ -85,7 +85,7 @@ function ResearchPage() {
                 {r.description}
               </p>
               <a
-                href="https://cal.com/rebateintel/30min"
+                href="/book"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-foreground group-hover:text-brand"
@@ -136,7 +136,7 @@ function ResearchPage() {
               </h2>
               <div className="mt-8">
                 <a
-                  href="https://cal.com/rebateintel/30min"
+                  href="/book"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="liquid-glass inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold"

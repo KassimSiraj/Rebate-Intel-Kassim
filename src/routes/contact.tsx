@@ -87,7 +87,7 @@ function ContactPage() {
                 </div>
                 <div className="md:col-span-2 mt-2 flex flex-wrap items-center gap-3">
                   <a
-                    href="https://cal.com/rebateintel/30min"
+                    href="/book"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="liquid-glass inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold"
