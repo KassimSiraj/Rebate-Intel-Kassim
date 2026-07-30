@@ -84,8 +84,6 @@ export function VisibilityChecker({ compact = false }: { compact?: boolean }) {
           </div>
           <a
             href="/book"
-            target="_blank"
-            rel="noopener noreferrer"
             className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-brand"
           >
             Get the full results on a strategy call <ArrowRight className="h-3.5 w-3.5" />

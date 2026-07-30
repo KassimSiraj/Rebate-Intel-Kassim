@@ -123,8 +123,6 @@ export function SiteNav() {
           </Link>
           <a
             href="/book"
-            target="_blank"
-            rel="noopener noreferrer"
             className="liquid-glass inline-flex items-center justify-center px-5 py-2 text-sm font-semibold"
           >
             Book Strategy Call
@@ -170,8 +168,6 @@ export function SiteNav() {
             </Link>
             <a
               href="/book"
-              target="_blank"
-              rel="noopener noreferrer"
               onClick={() => setOpen(false)}
               className="liquid-glass mt-3 inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold"
             >

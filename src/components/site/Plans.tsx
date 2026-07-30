@@ -74,8 +74,6 @@ export function Plans() {
           </ul>
           <a
             href="/book"
-            target="_blank"
-            rel="noopener noreferrer"
             className={cn(
               "mt-7 inline-flex w-full items-center justify-center px-5 py-3 text-sm font-semibold",
               p.featured
