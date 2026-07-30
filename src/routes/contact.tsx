@@ -87,9 +87,7 @@ function ContactPage() {
                 </div>
                 <div className="md:col-span-2 mt-2 flex flex-wrap items-center gap-3">
                   <a
-                    href="https://cal.com/rebateintel/30min"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="/book"
                     className="liquid-glass inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold"
                   >
                     Book an AI Positioning strategy call <ArrowRight className="h-4 w-4" />

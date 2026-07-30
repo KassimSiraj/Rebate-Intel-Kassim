@@ -85,9 +85,7 @@ function ResearchPage() {
                 {r.description}
               </p>
               <a
-                href="https://cal.com/rebateintel/30min"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/book"
                 className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-foreground group-hover:text-brand"
               >
                 Read Report <ArrowRight className="h-3.5 w-3.5" />
@@ -136,9 +134,7 @@ function ResearchPage() {
               </h2>
               <div className="mt-8">
                 <a
-                  href="https://cal.com/rebateintel/30min"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="/book"
                   className="liquid-glass inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold"
                 >
                   Book a 30-minute AI recommendation strategy call

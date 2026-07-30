@@ -73,9 +73,7 @@ export function Plans() {
             ))}
           </ul>
           <a
-            href="https://cal.com/rebateintel/30min"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/book"
             className={cn(
               "mt-7 inline-flex w-full items-center justify-center px-5 py-3 text-sm font-semibold",
               p.featured

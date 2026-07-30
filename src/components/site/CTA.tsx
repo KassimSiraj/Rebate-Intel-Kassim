@@ -14,9 +14,7 @@ export function FinalCTA() {
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a
-                href="https://cal.com/rebateintel/30min"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/book"
                 className="liquid-glass inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold"
               >
                 Book an AI Positioning strategy call <ArrowRight className="h-4 w-4" />

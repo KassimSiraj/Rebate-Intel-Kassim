@@ -4,11 +4,18 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
-PAGES=("/" "/solutions" "/industries" "/research" "/resources" "/about" "/contact" "/privacy" "/terms")
+PAGES=("/" "/book" "/solutions" "/industries" "/research" "/resources" "/about" "/contact" "/privacy" "/terms")
 PORT=4321
 
 echo "> Building..."
 bunx vite build
+
+# Pin the worker compatibility date to one the local wrangler binary supports.
+node -e '
+const f="dist/server/wrangler.json";const fs=require("fs");const j=JSON.parse(fs.readFileSync(f,"utf8"));
+const d=new Date(Date.now()-3*864e5).toISOString().slice(0,10);
+if(j.compatibility_date>d){j.compatibility_date=d;fs.writeFileSync(f,JSON.stringify(j,null,2));}
+'
 
 echo "> Starting local render server..."
 (cd dist/server && bunx --bun wrangler@4 dev -c wrangler.json --port $PORT --ip 127.0.0.1 > /tmp/render-server.log 2>&1) &
